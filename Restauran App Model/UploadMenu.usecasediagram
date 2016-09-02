@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="777c5c41-89c9-46ea-86bf-0cd5d3e07702" name="Upload Menus" linkedPackageId="e19e650b-a325-4848-b9b5-db0ba421e9d8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="730faeda-ffdb-45b1-965f-e9b863ed6a05">
+      <profileInstance Id="2faf579c-0a02-4172-8189-db649e67683e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8924248b-e2cf-45fe-a2a7-e94a0d9c0e50">
+      <profileInstance Id="f8f45109-8aff-4f4c-918f-1b540cd7985f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c1772514-27b8-4feb-935e-55b4b550a6e4" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40084f70-2bc5-4786-861c-92fea40e471f" />
+        <targetEnds>
+          <association Id="89cb57d5-8c80-4368-9ab0-fe4eba3e061e" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e2692d0e-7109-4c30-9f1e-37a5669b799a" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6c320ab-54e4-4da6-bf4e-cb76676b9774" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9316ad5c-1b37-4088-a6db-02d9ae2ac226" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29ef5acc-0593-4588-ac60-4431156c218e" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d976fa2e-37e2-42cd-95f8-5fe5d155612f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1fec47b5-5213-49f6-9d5f-8a76747399ef" />
+          </association>
+          <association Id="73727a28-9f52-46b2-be1c-6ae809ae2adc" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Approve Daily Menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a959f396-9580-4329-a1ba-5e0057d790ed" LastKnownName="Approve Daily Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f4afe7e-c143-4017-b3d9-401cf1d83b54" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="12e2da45-6fdc-4b60-bccb-b9f24d8eaa27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b56260a3-4020-4572-bfc5-f1eae11ca653" name="Approve Daily Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e3084632-84f2-48ac-b1dd-ccfdac7852ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c0fd2ff5-da44-4d11-b55f-4a1eb7300adb" />
+          </association>
+          <association Id="567b1186-24e4-4e1e-8f23-4b0f29fcd477" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Approve Permanent Menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d4d9bd5e-24f3-478a-9e46-9f582906254a" LastKnownName="Approve Permanent Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92b59e42-bceb-4dbc-b2bb-2e37d13dd464" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e9315523-d165-43ad-92f4-bfb564eaf9f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b3bd8aad-1290-492e-ab23-750995cf8319" name="Approve Permanent Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f4e76ebd-9308-43fb-92f9-546f20047e61" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee8c7864-4392-4bac-a0e3-f5235c363583" />
+          </association>
+          <association Id="a3bd0d07-ae16-4030-90f3-1d8307eb049a" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Upload Permanent Menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="59cad404-d775-4e0f-aef8-d67efec81d10" LastKnownName="Upload Permanent Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6e2826a-e0f0-4629-b6c8-483507818090" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="28ca4750-628c-4601-a74a-db9150db7457" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf3468a1-16d4-4c7c-b96f-63ca0c634585" name="Upload Permanent Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="70bdf4a3-10c7-45d2-9d93-56a4dd1f7e1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0f5b4cd3-b31e-42b0-8f19-148e186e6ea9" />
+          </association>
+          <association Id="e993a7a0-fdff-406f-b4ec-9b12fdc9d8d9" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Upload Daily Menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="347bf42b-c0b6-446f-8dd0-475bc71c6ec3" LastKnownName="Upload Daily Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db6d98d0-e8d2-43a4-b110-c280c7e94368" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="47800ea9-c87b-4fd9-9f45-ae13c6850411" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb7f31a8-73f5-4b8f-9b5a-6b97636d4244" name="Upload Daily Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="32d86dfa-bfd3-4f63-82fe-c12ef54a18f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ec65cf6f-a80c-4a32-b2be-9f84aeea365f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="048ac0d0-511e-4f38-9432-41a2e34d3a75" name="Upload Menus" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5101d946-48d9-4ba3-9bc8-6788922ecd08" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="e2692d0e-7109-4c30-9f1e-37a5669b799a" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="afe82f50-3019-4f4a-b696-75325820c1da" />
+        <subjects>
+          <subsystemMoniker Id="048ac0d0-511e-4f38-9432-41a2e34d3a75" LastKnownName="Upload Menus" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="347bf42b-c0b6-446f-8dd0-475bc71c6ec3" name="Upload Daily Menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8fe54432-a1da-4283-ac13-5097a0350fd7" />
+        <subjects>
+          <subsystemMoniker Id="048ac0d0-511e-4f38-9432-41a2e34d3a75" LastKnownName="Upload Menus" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="59cad404-d775-4e0f-aef8-d67efec81d10" name="Upload Permanent Menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47928675-9e4e-4c99-9b7b-5d9f9153c0aa" />
+        <subjects>
+          <subsystemMoniker Id="048ac0d0-511e-4f38-9432-41a2e34d3a75" LastKnownName="Upload Menus" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="657d69b1-fcc7-44be-8140-59e997092876" name="Employee" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59fd1e6f-1cfe-48c1-80c9-b11eacb48272" />
+        <targetEnds>
+          <association Id="c07e2fae-91ca-467b-87f5-f6f56e83f740" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e2692d0e-7109-4c30-9f1e-37a5669b799a" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b3f4a27-ba90-41ac-a862-db4c099a06d9" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f459e08e-9804-42b1-a905-deb7a2f12616" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23f6aaaa-373d-4d91-a21e-07e753c5d916" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1a083d76-3ee8-4a9f-82fc-67fecee177c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0ef4c6ae-ab51-4700-9b8c-4ea871504f20" />
+          </association>
+          <association Id="4ba25f1a-23fc-4151-8a5f-0d4e981d092d" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Upload Daily Menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="347bf42b-c0b6-446f-8dd0-475bc71c6ec3" LastKnownName="Upload Daily Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8629c6b0-f70a-4ead-a383-aa0f5209bf0d" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="21b35737-20ba-46f7-a34a-07384fb5c9a6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c59e22a9-6011-460f-b270-d934d5fb108b" name="Upload Daily Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c32b1cef-4705-47b4-bc17-417a72dbf983" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f40448a1-d204-4d7e-8f87-4f8f935d2250" />
+          </association>
+          <association Id="385a8399-839a-4b54-9d21-738263e94762" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Upload Permanent Menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="59cad404-d775-4e0f-aef8-d67efec81d10" LastKnownName="Upload Permanent Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58c1ca87-2398-4ead-977d-3ee7fa5ded16" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="87b6efec-40fc-46e5-81fe-8e0ca49b751a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d428355f-c3c6-4d78-8375-0dcb4c8d6071" name="Upload Permanent Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cede8d0b-9a72-47ae-b26d-f597010d1a0f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7ac1373-4ccf-4f8d-83e8-005728c14604" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="a959f396-9580-4329-a1ba-5e0057d790ed" name="Approve Daily Menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c856b50-c4ff-48b3-8faa-6ed976166e78" />
+        <subjects>
+          <subsystemMoniker Id="048ac0d0-511e-4f38-9432-41a2e34d3a75" LastKnownName="Upload Menus" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d4d9bd5e-24f3-478a-9e46-9f582906254a" name="Approve Permanent Menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97a54cb4-dd74-4f2a-81fb-4d7b5bb7439f" />
+        <subjects>
+          <subsystemMoniker Id="048ac0d0-511e-4f38-9432-41a2e34d3a75" LastKnownName="Upload Menus" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="e19e650b-a325-4848-b9b5-db0ba421e9d8" name="Restauran App Model">
+    <elementDefinition Id="51f2928c-85d9-4e1e-8c67-61f9d961c426" />
+  </package>
+</useCaseModelRoot>

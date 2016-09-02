@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3911d48a-5d65-47be-a5c4-48ef4bb3c466" name="Buy Menu" linkedPackageId="96bfe53e-e10c-45ab-b303-84a3ed134955" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="1166565a-0ba1-4d82-a397-c00fbfb6cc9f">
+      <profileInstance Id="c44ac5df-667d-4d77-9855-ab4f3a9d7377" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4f1a8ebe-4ce1-4945-a2a0-012c75149e22">
+      <profileInstance Id="31513fdc-61cc-448f-8ceb-f0bcdf0a4da2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c42e0c4e-3b40-4987-b710-7b5e999556ec" name="Buy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4cc13c51-4cfa-4bc8-b6c3-a8aaf5c0270a" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6637fb3f-1994-46a5-baf4-3a3ff5a7bec8" name="Client" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="13bcd118-7cfe-4b70-92f1-7a31f8155d0d" />
+        <targetEnds>
+          <association Id="3e7513d3-8b04-4aa2-8674-4cedbbfa027f" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="View Menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e76ed6d1-ed27-4a5e-a236-f068c46ca374" LastKnownName="View Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e56f5afb-2b9e-4d04-9fcd-5fb96702a122" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6338279a-6fc1-433f-8ff3-bf5a586c0139" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="724dd4ed-bd82-4cbb-8183-ec0b88eb974c" name="View Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a431ed51-b219-4b0e-8b77-c43f64864df1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7193a7c-fd36-4851-9b67-919b6a3187ab" />
+          </association>
+          <association Id="cf52de5c-e835-4ac2-ae10-97d0f0d77b05" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Buy" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5bfeab46-76e8-4396-a9c5-1413985df7be" LastKnownName="Buy" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9d900bd2-4910-43c1-bd48-5944ba3c4323" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6a05d638-21be-4947-9db0-2b9ce0b48130" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc158450-f93b-4c76-99a5-500df77cfbd0" name="Buy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0ea69d6a-c21b-4273-a017-386a38887d5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a31fd77-000d-42ff-ad3c-d73bb2a9a4f4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="e76ed6d1-ed27-4a5e-a236-f068c46ca374" name="View Menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b40635b-1162-4877-a035-96a999d30c92" />
+        <subjects>
+          <subsystemMoniker Id="c42e0c4e-3b40-4987-b710-7b5e999556ec" LastKnownName="Buy" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5bfeab46-76e8-4396-a9c5-1413985df7be" name="Buy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aeb18718-a5b5-439f-8827-b23973006399" />
+        <subjects>
+          <subsystemMoniker Id="c42e0c4e-3b40-4987-b710-7b5e999556ec" LastKnownName="Buy" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0a86ecb7-df75-4b84-82d4-10e0f168b96b" name="Deliver Orden" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d93e9e3d-8c99-4d48-9ad3-d1f628aeadd4" />
+        <subjects>
+          <subsystemMoniker Id="c42e0c4e-3b40-4987-b710-7b5e999556ec" LastKnownName="Buy" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="5b02b5b7-5756-4437-95ee-41db8307767b" name="Delivery Man" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e9c36253-662b-4342-aa98-d7495091b912" />
+        <targetEnds>
+          <association Id="6e659cd3-da7b-4f27-be65-a3a546e01c9b" isDerived="false" sourceEndRoleName="Delivery Man" targetEndRoleName="Send" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0a86ecb7-df75-4b84-82d4-10e0f168b96b" LastKnownName="Deliver Orden" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c87e55a-1b62-4315-925e-302eb6afdb13" name="Delivery Man" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0ddf30a3-4ebd-4464-a30d-e9d2cb36df60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="50502362-779b-4bda-97b3-a26465dc82d8" name="Send" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ac7680ad-16bc-4c41-9d53-0bde4eecae1a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="62fd6fee-6aee-423a-aef5-527898f35242" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="96bfe53e-e10c-45ab-b303-84a3ed134955" name="Restauran App Model">
+    <elementDefinition Id="51f2928c-85d9-4e1e-8c67-61f9d961c426" />
+  </package>
+</useCaseModelRoot>
